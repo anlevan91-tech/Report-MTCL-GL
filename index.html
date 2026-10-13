@@ -5,31 +5,35 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>MTCL Dashboard - Gia Lai</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #525659; margin: 0; padding: 40px 10px; display: flex; justify-content: center; }
-        .page { background: white; max-width: 1500px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; overflow: hidden; }
-        .header { text-align: center; padding: 20px 0; border-bottom: 1px solid #ddd; }
-        h1 { color: #333; margin: 0 0 5px 0; text-transform: uppercase; }
-        .time-update { color: #888; font-style: italic; font-size: 14px; margin-bottom: 5px; }
-        .row { display: flex; width: 100%; align-items: stretch; }
-        .row img { display: block; margin: 0; padding: 0; border: none; object-fit: contain; }
-        .w-100 { width: 100%; }
-        .w-50 { width: 50%; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #2b2b2b; margin: 0; padding: 20px 0; display: flex; justify-content: center; }
+        .page { background: white; max-width: 1400px; width: 100%; display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0,0,0,0.8); overflow: hidden; }
+        .header { text-align: center; padding: 15px 0; background: #ffffff; border-bottom: 1px solid #ddd; }
+        h1 { color: #2c3e50; margin: 0 0 5px 0; font-size: 24px; text-transform: uppercase; font-weight: 700; }
+        .time { color: #7f8c8d; font-size: 13px; font-style: italic; margin: 0; }
+        img { display: block; width: 100%; margin: 0; padding: 0; border: none; object-fit: contain; }
+        .row { display: flex; width: 100%; margin: 0; padding: 0; }
+        .half { width: 50%; }
     </style>
 </head>
 <body>
     <div class='page'>
         <div class='header'>
             <h1>GIA LAI NETWORK QUALITY REPORT</h1>
-            <div class='time-update'>Last updated: 13/10/2026 11:14:27</div>
+            <p class='time'>Last updated: 13/10/2026 11:17:12</p>
         </div>
-        <!-- Row 1: Top Image -->
-        <div class='row'><img src='img1.png?v=111427' class='w-100'></div>
-        <!-- Row 2: Two images side by side -->
-        <div class='row'><img src='img2.png?v=111427' class='w-50'><img src='img3.png?v=111427' class='w-50'></div>
-        <!-- Row 3: Two pies side by side -->
-        <div class='row'><img src='img4.png?v=111427' class='w-50'><img src='img5.png?v=111427' class='w-50'></div>
-        <!-- Row 4: Bottom Image -->
-        <div class='row'><img src='img6.png?v=111427' class='w-100'></div>
+        <!-- 1. Top Chart (U2:AF34) -->
+        <img src='img1.png?v=111712'>
+        <!-- 2. Table 1 (A2:O25) -->
+        <img src='img2.png?v=111712'>
+        <!-- 3. Table 2 (C28:L42) -->
+        <img src='img3.png?v=111712'>
+        <!-- 4 & 5. Two Pies Side-by-Side (Q5:T34 & Q35:T61) -->
+        <div class='row'>
+            <img src='img4.png?v=111712' class='half'>
+            <img src='img5.png?v=111712' class='half'>
+        </div>
+        <!-- 6. Bottom Chart (U35:AH61) -->
+        <img src='img6.png?v=111712'>
     </div>
 </body>
 </html>
